@@ -19,6 +19,6 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function double(event){
-  event.target.style.scale = 2;
+  event.target.style.transform = "scale(2, 2)";
 
 }
