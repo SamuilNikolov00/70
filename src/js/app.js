@@ -1,10 +1,24 @@
 import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
+ const div = document.createElement("div");
+ div.classList.add("image");
+ const img = document.createElement("img");
+ img.setAttribute("image","");
+ img.setAttribute("src",'../images/MichaelScott.png');
+ div.appendChild(img);
 
-  const button = document.querySelector(".button");
-  button.addEventListener("click", () => {
-    alert("💣");
-  });
+  document.querySelector(".main").appendChild(div);
+
+  const toDouble = document.querySelector(".image");
+
+  toDouble.addEventListener("click",double);
+
+  
+
 });
+
+function double(event){
+  event.target.style.scale = 2;
+
+}
